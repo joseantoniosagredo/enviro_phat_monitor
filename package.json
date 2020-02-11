@@ -1,0 +1,26 @@
+{
+  "name": "enviro_phat_monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseantoniosagredo/enviro_phat_monitor.git"
+  },
+  "author": "Jose Antonio Gutierrez Sagredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseantoniosagredo/enviro_phat_monitor/issues"
+  },
+  "homepage": "https://github.com/joseantoniosagredo/enviro_phat_monitor#readme"
+}
