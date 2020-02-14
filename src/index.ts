@@ -1,5 +1,5 @@
 import * as  express from 'express'
-import { createInterval } from './timer/envirophat';
+import { createInterval } from './bashConnector/envirophat';
 
 const app = express()
 createInterval()
