@@ -5,7 +5,7 @@ var interval = null
 
 export const createInterval = ()=> {
     interval = setInterval(()=>{
-        pythonBash([__dirname + '/envirophat.py'],(err,data) => {
+        pythonBash([__dirname + '/envirophat_script.py'],(err,data) => {
             if(err) return console.error(err)
             console.log(data)
         })

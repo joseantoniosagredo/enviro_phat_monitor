@@ -9,4 +9,4 @@ enviro_data = {
     "raw":envirophat.light.raw()
 }
 
-print(enviro_data)
+print enviro_data
