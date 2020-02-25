@@ -1,5 +1,5 @@
 import * as  express from 'express'
-import { createInterval } from './bashConnector/envirophat';
+import { createInterval } from './bashConnector/intervalEnvirophat';
 
 const PORT = process.env.PORT || 3000
 
