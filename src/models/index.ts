@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import * as mongoose from 'mongoose'
 const HOST = process.env.mongo_host || 'localhost'
 const PORT = process.env.mongo_port || '27017'
 const DB_NAME = process.env.mongo_db_name || 'db_envirophat'
