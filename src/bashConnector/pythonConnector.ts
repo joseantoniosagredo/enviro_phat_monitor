@@ -9,7 +9,16 @@ const options = {
 export default function (script: string, callback: Callback<EnviroPhatType>) {
     PythonShell.run( script,options,(err,output)=>{
         if(err) return callback(err)
-        const data: EnviroPhatType = JSON.parse(output[0])
-        callback(null,data)
+        try{
+            const data: EnviroPhatType = JSON.parse(output[0])
+            callback(null,data)
+        }catch (e) {
+            console.error(e)
+            console.error('Error to parse ',output[0])
+            console.error('Output: ',output.toString())
+            callback(e)
+        }
+        
+
     })
 }

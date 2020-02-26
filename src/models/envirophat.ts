@@ -9,7 +9,7 @@ export type EnviroPhatType = {
         blue: number
     }
     light: number
-    raw: string
+    raw: number[]
 }
 const schema = new Schema({
     pressure: { type: String, required: true },
@@ -21,7 +21,7 @@ const schema = new Schema({
         blue: { type: Number, required: true }
     },
     light: { type: Number, required: true },
-    raw: { type: String, required: true }
+    raw: [{ type: Number, required: true }]
 })
 
 export default model<EnviroPhatType & Document>('envirophat',schema,'envirophat')

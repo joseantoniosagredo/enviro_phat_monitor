@@ -1,5 +1,5 @@
 import envirophat
-
+import numpy as np
 enviro_data = {
     "pressure":envirophat.weather.pressure() ,
     "temperature":envirophat.weather.temperature(),
@@ -10,7 +10,7 @@ enviro_data = {
         "blue":envirophat.light.rgb()[2]
     },
     "light":envirophat.light.light(),
-    "raw":envirophat.light.raw()
+    "raw":np.array(envirophat.light.raw())
 }
 
 print(enviro_data)
