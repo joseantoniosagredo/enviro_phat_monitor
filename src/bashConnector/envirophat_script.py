@@ -5,7 +5,7 @@ enviro_data = {
     "temperature":envirophat.weather.temperature(),
     "altitude": envirophat.weather.altitude(),
     "rgb":{
-        "red":envirophat.light.rgb()[0]
+        "red":envirophat.light.rgb()[0],
         "green":envirophat.light.rgb()[1],
         "blue":envirophat.light.rgb()[2]
     },
