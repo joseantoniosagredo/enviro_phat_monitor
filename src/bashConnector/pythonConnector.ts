@@ -10,7 +10,7 @@ export default function (script: string, callback: Callback<EnviroPhatType>) {
     PythonShell.run(script, options, (err, output) => {
         if (err) return callback(err)
         try {
-            const data: EnviroPhatType = JSON.parse(output[0])
+            const data: EnviroPhatType = JSON.parse(output[0].replace(/'/g,'"'))
             callback(null, data)
         } catch (e) {
             console.error(e)
