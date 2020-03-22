@@ -10,7 +10,8 @@ export const createInterval = ()=> {
             if(err) return console.error(err)
             const envphat = new EnvirophatModel(data)
             envphat.save(err => {
-                if(err) console.error(err)
+                if(err) return console.error(err)
+                console.log('Saved')
             })
         })
     },5000)

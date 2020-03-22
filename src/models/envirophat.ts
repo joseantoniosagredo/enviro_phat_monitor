@@ -22,7 +22,7 @@ const schema = new Schema({
     },
     light: { type: Number, required: true },
     raw: [{ type: Number, required: true }],
-    date: { type: Date, required: true, default: new Date() }
+    date: { type: Date, required: true, default: Date.now }
 })
 
 export default model<EnviroPhatType & Document>('envirophat', schema, 'envirophat')
